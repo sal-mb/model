@@ -28,7 +28,7 @@ def kp_exercise_3(data, j, k, l, solution):
     # -------------------------- constraints ----------------------------
     m += xsum(weights[i] * x[i] for i in I) <= wmax
     
-    
+    m += x[l] >= x[k] + x[j] - 0.1
 
 
     # --------------------------- solving -------------------------------

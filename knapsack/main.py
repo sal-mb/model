@@ -1,4 +1,4 @@
-from reader import exercise_solution, print_formatted_arrays, parse_exercise_files, get_args, generate_partitions
+from reader import exercise_solution, print_formatted_arrays, parse_exercise_files, get_args, generate_partitions, print_exercise_info
 
 import time
 
@@ -20,7 +20,8 @@ def main():
     if exercise == 4:
         tests = generate_partitions(data['n'],3)
         n_tests = len(tests)
-
+    
+    print_exercise_info(exercise)
 
     # reading check file
     for i in range(n_tests):
@@ -28,7 +29,6 @@ def main():
         
         status = exercise_solution(exercise, data, tests[i])
         
-        #write_text_to_file("4/check", str(status) + ' ')
         if status == checks[i]:
             got_right += 1
             print_formatted_arrays(tests[i], 1)

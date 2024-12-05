@@ -1,6 +1,6 @@
 from mip import Model, xsum, maximize, BINARY, CBC
 
-def kp_exercise_4(data, sacks, solution):
+def kp_exercise_4(data, knapsacks, solution):
 
     n = data['n']
     wmax = data['capacity']
@@ -10,7 +10,7 @@ def kp_exercise_4(data, sacks, solution):
     I = range(n)
 
     # set of knapsacks of exercise 4
-    K = range(sacks)
+    K = range(knapsacks)
 
 
     # ------------------------------ model ------------------------------

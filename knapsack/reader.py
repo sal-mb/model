@@ -124,3 +124,13 @@ def exercise_solution(exercise, data, test):
         return kp_exercise_3(data, 0, 1, 2, test)
     else:
         return kp_exercise_4(data, 3, test)
+
+def print_exercise_info(exercise):
+    if exercise ==1:
+        print("exercise itens: j = 0, k = 1\n")
+    elif exercise == 2:
+        print("exercise itens: j = 0, k = 1\n")
+    elif exercise == 3:
+        print("exercise itens: j = 0, k = 1, l = 2\n")
+    else:
+        print("total knapsacks = 3")
