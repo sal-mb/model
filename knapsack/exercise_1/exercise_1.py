@@ -21,7 +21,6 @@ def kp_exercise_1(data, j, k, solution):
 
 
 
-
     # ------------------------ objective function -----------------------
     m.objective = maximize(xsum(p[i] * x[i] for i in I))
 
@@ -30,7 +29,7 @@ def kp_exercise_1(data, j, k, solution):
     m += xsum(w[i] * x[i] for i in I) <= wmax
     
 
-
+    m += x[j] <= x[k]
     
 
     # --------------------------- solving -------------------------------
