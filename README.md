@@ -1,12 +1,5 @@
 # Kit Prequel
-### Chapter 1
+### Knapsack
 
-To solve the exercises, you should modify the KP formulation present in the "exercise_\*.py" inside each "exercise_\*/" folder.
-
-When you are done updating the model to fit the exercises demands, you can check the correctness of your answer by running the following command:
-
-`python main.py [exercise number]`
-
-For example, let's say you want to check the answer of exercise 1. You can do it by running: 
-
-`python main.py 1`
+All the exercises are in [Julia](julialang.org) using the [JuMP package](https://jump.dev/), to solve them you need to open the .ipynb file inside the knapsack folder, we recommend using [Jupyter Notebook](https://jupyter.org/) for that. 
+  
